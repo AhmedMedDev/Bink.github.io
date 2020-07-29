@@ -341,6 +341,8 @@ $(document).ready(function () {
     $(window).on("scroll",function(){
         if($(window).scrollTop() > 900){
             $('.scrollToTop').fadeIn(1000)
+        }else{
+            $('.scrollToTop').fadeOut(1000)
         }
     })
     $('.scrollToTop').click(function(){
