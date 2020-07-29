@@ -201,6 +201,7 @@ body{
     color: #fff;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
+    text-shadow: 3px 3px 4px #32245d;
 }
 .header .content .button{
     font-weight: 700;
@@ -215,7 +216,9 @@ body{
     line-height: 70px;
     text-align: center;
     margin: 50px 0;
-    overflow: hidden
+    overflow: hidden;
+    box-shadow: 3px 3px 4px #32245d;
+    cursor: pointer
 }
 .hvr-radial-in{
     background: linear-gradient(to right, #bd0584 0%, #471a7b 100%);
@@ -243,6 +246,9 @@ body{
     }
     .header .content .button{
          margin: 50px auto;
+    }
+    .header .content h1{
+        font-size: 9vw;
     }
 }
 /*END HEADER*/
