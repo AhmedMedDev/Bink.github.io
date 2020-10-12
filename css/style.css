@@ -27,6 +27,7 @@ body{
     color: #59437a !important
 }
 /*BASICS*/
+
 /*
     ================================
     =============NAV================
@@ -201,7 +202,7 @@ body{
     color: #fff;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
-    text-shadow: 3px 3px 4px #32245d;
+/*    text-shadow: 3px 3px 4px #32245d;*/
 }
 .header .content .button{
     font-weight: 700;
@@ -217,9 +218,10 @@ body{
     text-align: center;
     margin: 50px 0;
     overflow: hidden;
-    box-shadow: 3px 3px 4px #32245d;
+/*    box-shadow: 3px 3px 4px #32245d;*/
     cursor: pointer
 }
+/*
 .hvr-radial-in{
     background: linear-gradient(to right, #bd0584 0%, #471a7b 100%);
 }
@@ -227,6 +229,7 @@ body{
     background: #f3d2d8;
     transition: all .75s ease;
 }
+*/
 /*MEDIA HEADER*/
 @media(max-width:390px){
     .header .content .button{
@@ -411,6 +414,7 @@ body{
 }
 .more .content .feat-more .box-row .box img{
     width: 220px;
+    transition: all .5s ease;
 }
 .more .content .feat-more .box-row .box h3{
     font-size: 28px;
@@ -499,7 +503,7 @@ body{
 .team .content .box-col .imgs{}
 .team .content .box-col .imgs img{
     border-radius: 25%;
-    margin: 0 0 25px;
+    margin: 0 auto 25px;
     position: relative;
 /*    transition: all 1s ease;*/
 }
@@ -608,7 +612,7 @@ body{
     background-repeat: no-repeat;
     background-size: auto;
     padding: 7% 0 1%;
-/*    overflow: hidden*/
+    overflow: hidden
 }
 .portfolio .content{}
 .portfolio .content .box01{
@@ -914,6 +918,7 @@ body{
     background-repeat: no-repeat;
     background-size: auto;
     padding: 10% 0 8%;    
+    overflow: hidden
 }
 .news .content{}
 .news .content .box01{
@@ -1050,6 +1055,7 @@ body{
     background-repeat: no-repeat;
     background-size: auto;
     padding: 10% 0 8%;
+    overflow: hidden
 }
 .buty .content{}
 .buty .content .carousel-item{}
@@ -1285,6 +1291,7 @@ body{
     background-repeat: no-repeat;
     background-size: auto;
     padding: 10% 0 8%;
+    overflow: hidden
 }
 .stay .content{}
 .stay .content .box01{
@@ -1565,3 +1572,57 @@ body{
             transform: scale3D(0, 0, 1);
   } 
 }
+/*END SCROLL TO TOP*/
+.spinner {
+  margin: 100px auto;
+  width: 50px;
+  height: 40px;
+  text-align: center;
+  font-size: 10px;
+}
+
+.spinner > div {
+  background-color: #333;
+  height: 100%;
+  width: 6px;
+  display: inline-block;
+  
+  -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+  animation: sk-stretchdelay 1.2s infinite ease-in-out;
+}
+
+.spinner .rect2 {
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s;
+}
+
+.spinner .rect3 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+.spinner .rect4 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+
+.spinner .rect5 {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+}
+
+@-webkit-keyframes sk-stretchdelay {
+  0%, 40%, 100% { -webkit-transform: scaleY(0.4) }  
+  20% { -webkit-transform: scaleY(1.0) }
+}
+
+@keyframes sk-stretchdelay {
+  0%, 40%, 100% { 
+    transform: scaleY(0.4);
+    -webkit-transform: scaleY(0.4);
+  }  20% { 
+    transform: scaleY(1.0);
+    -webkit-transform: scaleY(1.0);
+  }
+}
+/*END SCROLL TO TOP*/
